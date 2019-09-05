@@ -37,5 +37,14 @@ while (current = arr.pop())
 {
   console.log(arr)
 }
+
+//push
+var p=[1,2,3,4]
+p.push('Hello',200,5)
+console.log(p)
+
+
+
+
 }
 
