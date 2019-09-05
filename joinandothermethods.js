@@ -31,14 +31,11 @@ console.log(h1)
 console.log(g)
 console.log(popped)
 
-var i=['me','you',1,2,3,4,5]
-var count=0;
-i.forEach(function(pop)
+var arr = [0,1,2,3,4,5];
+var current;
+while (current = arr.pop())
 {
-  i.pop();
-  count++;
-});
-console.log(i);
-console.log(count)
+  console.log(arr)
+}
 }
 
