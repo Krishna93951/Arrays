@@ -21,6 +21,24 @@ console.log ('not found')
 else
 console.log(car.lastIndexOf('Kia'));
 
+//pop
+var g=['banana',1,'pulp',2,3,4,5]
+var h= []
+var h1=h.pop();
+var popped= g.pop();
+console.log(h)
+console.log(h1)
+console.log(g)
+console.log(popped)
 
+var i=['me','you',1,2,3,4,5]
+var count=0;
+i.forEach(function(pop)
+{
+  i.pop();
+  count++;
+});
+console.log(i);
+console.log(count)
 }
 
