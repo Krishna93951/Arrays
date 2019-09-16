@@ -8,6 +8,7 @@ import {bc} from './copywithin.js';
 import {gg} from './every.js'; 
 import {h}  from './arraymethods.js';
 import {u} from './joinandothermethods.js';
+import {kk} from './reduceandothers.js';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
@@ -18,4 +19,5 @@ k();
 //bc();
 //gg();
 //h();
-u();
+//u();
+kk();
