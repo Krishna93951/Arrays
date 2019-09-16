@@ -67,6 +67,50 @@ function groupBy(objectArray, property) {
 var groupedPeople = groupBy(people, 'gender');
 //console.log(groupedPeople)
 
-var 
+//Bonding arrays in a arrays
 
+var company =[
+  {name:'Bandi',
+  desig:['web','Dev','form'],
+  age: 22
+  },
+  {name:'Kopps',
+  desig:['web','Dev','DE'],
+  age: 22
+  },
+  {name:'KK',
+  desig:['Web','Dev','Form'],
+  age: 22
+  }
+];
+var emp=company.reduce(function(acc,curr){
+  return[...acc,...curr.desig];
+},['App Dev'])
+//console.log(emp)
+
+//removing duplicate 
+var myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd',1,1,1,1,1,2,2,2,2,2,3,3,3,3,3];
+var myOrderedArray = myArray.reduce(function (accumulator, currentValue) {
+  if (accumulator.indexOf(currentValue) === -1) {
+    accumulator.push(currentValue);
+  }
+  return accumulator
+}, [])
+
+console.log(myOrderedArray);
+
+
+//writing using map reduce
+  Array.prototype.mapUsingReduce = function(callback, thisArg) {
+    return this.reduce(function(mappedArray, currentValue, index, array) {
+      mappedArray[index] = callback.call(thisArg, currentValue, index, array);
+      return mappedArray;
+    }, []);
+  };
+
+
+var a=[0, 0,0, 0].mapUsingReduce(
+  (currentValue, index, array) => currentValue + index + array.length
+); // [4,5,6,7]
+console.log(a)
 }
