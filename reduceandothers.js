@@ -121,7 +121,17 @@ var k=[3,0,5,1,2,3,6].reduceRight(function(a,b){
 //console.log(k)
 
 //reduce Right flat
+var t=[[1,0],[3,2],[6,5,4]].reduceRight(function(a,b){
+  return a.concat(b)
+},[])
+//console.log(t)
 
+//difference between reduce and reduceRight
+var y=['1','2','3','4','5']
+var q=y.reduce(function(a,b){return a + b})
+var w=y.reduceRight(function(a,b){return a + b})
+console.log(q)
+console.log(w)
 
 
 
