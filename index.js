@@ -9,6 +9,7 @@ import {gg} from './every.js';
 import {h}  from './arraymethods.js';
 import {u} from './joinandothermethods.js';
 import {kk} from './reduceandothers.js';
+import {l} from './reverse.js';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
@@ -20,4 +21,5 @@ k();
 //gg();
 //h();
 //u();
-kk();
+//kk();
+l();
