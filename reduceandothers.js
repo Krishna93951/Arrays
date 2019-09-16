@@ -97,7 +97,7 @@ var myOrderedArray = myArray.reduce(function (accumulator, currentValue) {
   return accumulator
 }, [])
 
-console.log(myOrderedArray);
+//console.log(myOrderedArray);
 
 
 //writing using map reduce
@@ -112,5 +112,19 @@ console.log(myOrderedArray);
 var a=[0, 0,0, 0].mapUsingReduce(
   (currentValue, index, array) => currentValue + index + array.length
 ); // [4,5,6,7]
-console.log(a)
+//console.log(a)
+
+//reduce Right sum
+var k=[3,0,5,1,2,3,6].reduceRight(function(a,b){
+  return a+b;
+});
+//console.log(k)
+
+//reduce Right flat
+
+
+
+
+
+
 }
