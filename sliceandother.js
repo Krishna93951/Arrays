@@ -75,7 +75,10 @@ var rem=bike.splice(1)
 console.log(bike)
 console.log(rem)
 
+//toLocaleString
+var prices = ['$7', 500, 8123, 12]; 
+var z= prices.toLocaleString('en', { style: 'currency', currency: 'DOL' });
 
-
+console.log(z)
 
 }
