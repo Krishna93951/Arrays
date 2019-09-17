@@ -3,6 +3,7 @@ exports.sliceandothers=function sliceandothers(){
  var a= ['a','b','c','d']
  var b=a.slice(2,5);
  console.log(b);
+ 
 
  var a= ['a','b','c','d']
  var b=a.slice(-3,-1);
@@ -80,5 +81,7 @@ var prices = ['$7', 500, 8123, 12];
 var z= prices.toLocaleString('en', { style: 'currency', currency: 'DOL' });
 
 console.log(z)
+
+
 
 }
