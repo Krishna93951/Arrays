@@ -64,7 +64,7 @@ var remove=food.splice(0,1)
 console.log(remove)
 console.log(food)
 
-//Remove 1 element and add 1 element
+//Remove 2 elements and add 1 element
 var car=['BMW','Volvo','Suzuki','Ferrari']
 var readd=car.splice(1,2,'Benz')
 console.log(car)
