@@ -11,6 +11,7 @@ import {u} from './joinandothermethods.js';
 import {kk} from './reduceandothers.js';
 import {l} from './reverse.js';
 import {sliceandothers} from './sliceandother.js'
+import {sort} from './sort.js';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
@@ -24,4 +25,5 @@ k();
 //u();
 //kk();
 //l();
-sliceandothers();
+//sliceandothers();
+sort();
